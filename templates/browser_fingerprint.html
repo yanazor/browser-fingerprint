@@ -6,7 +6,7 @@
 
 
 </head>
-<link rel="stylesheet" href="../static/mysite.css">
+<link rel="stylesheet" href={{ url_for('static', filename='mysite.css') }}>
 
 <body>
 
@@ -22,8 +22,8 @@
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-<script src="../static/functions.js"></script>
-<script type="text/javascript" src="../static/script.js" ></script>
+<script src={{ url_for('static', filename='functions.js') }}></script>
+<script type="text/javascript" src={{ url_for('static', filename='script.js') }}></script>
 
 
 

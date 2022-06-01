@@ -6,7 +6,7 @@ from collections import defaultdict
 def get_http_accept_headers() -> object:
     d = defaultdict(list)
     time.sleep(1)
-    f = open('logs.log', 'r')
+    f = open('static/logs.log', 'r')
     accept = ''
     accept_enc = ''
     accept_lang = ''
