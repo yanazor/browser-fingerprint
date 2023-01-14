@@ -33,7 +33,7 @@ let ig = getFile('../static/ig.json');
       keys.push(navigator.cookieEnabled);//18
       console.log(keys)
       let key;
-      key = ['List of Plugins', 'User-agent', 'List of fonts', 'Canvas', 'Language', 'Resolution', 'ColorDepth', 'HTTP Accept Header', 'Timezone', 'WebGL Renderer', 'Platform', 'WebGL Vendor', 'Content-Encoding', 'Accept', 'Use of an adblock', 'DoNotTrack', 'Use of local storage', 'Use of session storage', 'Cookie enabled'];
+      key = ['List of Plugins', 'User-agent', 'List of fonts', 'Canvas', 'Language', 'Resolution', 'ColorDepth', 'HTTP Accept Header', 'Timezone', 'WebGL Renderer', 'Platform', 'WebGL Vendor', 'Content-Encoding', 'Accept - Language', 'Use of an adblock', 'DoNotTrack', 'Use of local storage', 'Use of session storage', 'Cookie enabled'];
 
       function convertToObj(key, keys) {
 
@@ -65,13 +65,16 @@ let ig = getFile('../static/ig.json');
     Headers= JSON.parse(JSON.stringify(dict))
 
       const keys_sort = Object.keys(entropy);
-      let accordance = {'list_of_plugins':'List of plugins', 'useragent':'User-agent','list_of_fonts':'List of fonts',
+      let accordance = {'list_of_plugins':'List of Plugins', 'useragent':'User-agent','list_of_fonts':'List of fonts',
       'canvas':'Canvas', 'language': 'Language', 'resolution':'Resolution', 'color_depth':'ColorDepth',
           'accept_headers':'HTTP Accept Header', 'timezone':'Timezone', 'WebGL_renderer':'WebGL Renderer',
           'platform':'Platform', 'WebGL_vendor':'WebGL Vendor', 'content_encoding':'Content-Encoding',
           'accept_lang': 'Accept - Language', 'adblock': 'Use of an adblock', 'donottrack':'DoNotTrack',
           'local_storage': 'Use of local storage', 'session_storage': 'Use of session storage',
           'cookie':'Cookie enabled'}
+console.log(dict)
+console.log(accordance)
+console.log(keys_sort)
       let tableCreate;
       tableCreate = () => {
           let body, tbl;
